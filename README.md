@@ -8,7 +8,7 @@
  ### [Sneak Peak into the tracing demo](https://youtu.be/jx_-0qfn-hc?si=-rjxkQVj7BceFghw)
  ### What are we going to build? Complete Road map!
 
- * [sequence diagram](https://www.plantuml.com/plantuml/png/XP31QiCm38RlVWhH-rvWXr7eQMpTEa8UG3ZAC6di8Qc5lFsIEg7Pgk2h_7tMhtylYgoN_koa2n4u2JdqcXXgOUTg8OQd5_ZaXhWYlWPFpt1WGgKyTEkdHxJIn3C98S9ngBxU7vGtR3iSMOeDx3ARLpGxE988VfDpDsYYJpZq57LPiMdyvIppnCcFy3A_6tQo-HaEARQ1UzIGeXNmDLv7BF6mB2gf_mNxa_gdGQMfKT_TkrnnTkhCPzdiyoDfQ8E_PIgMQblbEyloTbA3dZwfXNW-Sasu_JYvzETV)
+ * [sequence diagram](https://www.plantuml.com/plantuml/uml/XPB1JiCm38RlVWgpEo_00KtQ2S5WgEe3cDGTKTS4ETwalZtfqcg5fShL-JxxZ-LjK18zzoTuq6_k6RzEPpuA3H0wwr1yO22ZNh0E0b075dnynWzfM2gMYpNyX3jXKav5M3xTevLwcKYC_VT3zVbsfxnIsr5asJMuIMmQqMnmpo7GaG6kq4WVQEZPwJnYrVZBvSo3U1FXkNupyiccPznvrrhfIQrtkO0lxX8nByCygAJ-5_9Dwf-6bCUDckwsomMNJvtu96Vt-UxLjjPSCnMNchVA_opBwqapzDXalCtfaqi2jh4I3_mN)
  ### How to integrate tracing with Spring Boot Microservices?
  ### Order Microservice
  * Tech Stack --> Spring Boot + MYSQL + Kafka
