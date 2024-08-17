@@ -10,6 +10,10 @@
 
  * [sequence diagram](https://www.plantuml.com/plantuml/uml/XPB1JiCm38RlVWgpEo_00KtQ2S5WgEe3cDGTKTS4ETwalZtfqcg5fShL-JxxZ-LjK18zzoTuq6_k6RzEPpuA3H0wwr1yO22ZNh0E0b075dnynWzfM2gMYpNyX3jXKav5M3xTevLwcKYC_VT3zVbsfxnIsr5asJMuIMmQqMnmpo7GaG6kq4WVQEZPwJnYrVZBvSo3U1FXkNupyiccPznvrrhfIQrtkO0lxX8nByCygAJ-5_9Dwf-6bCUDckwsomMNJvtu96Vt-UxLjjPSCnMNchVA_opBwqapzDXalCtfaqi2jh4I3_mN)
  ### How to integrate tracing with Spring Boot Microservices?
+ ### Kafka Setup
+ * Cluster
+ * Topics
+ * Monitoring
  ### Order Microservice
  * Tech Stack --> Spring Boot + MYSQL + Kafka
  ### Payment Service
