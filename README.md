@@ -26,7 +26,11 @@
  ### MYSQL DB Setup
  * DB Creation
  * Tables
-   
+
+### Redis Setup
+* Installation
+* Interacting with CLI
+  
  ### Order Microservice
  * Tech Stack --> Spring Boot + MYSQL + Kafka
  ### Payment Service
