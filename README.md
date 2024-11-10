@@ -17,26 +17,33 @@
 * TraceId / SpanId / TraceParent
 * W3C Context
  
- ### How to integrate tracing with Spring Boot Microservices?
  ### Kafka Setup
  * Cluster
  * Topics
+   * order-topic
+   * payment-topic
+   * inventory-topic
  * Monitoring
 
  ### MYSQL DB Setup
+ * DB Setup
  * DB Creation
  * Tables
+   * order_info
+   * payment_info
+   * inventory_info
+   * notification_info
 
 ### Redis Setup
 * Installation
 * Interacting with CLI
   
  ### Order Microservice
- * Tech Stack --> Spring Boot + MYSQL + Kafka
+ * Tech Stack --> Spring Boot + MYSQL + Kafka + Redis
  ### Payment Service
   * Tech Stack --> Spring Boot + MYSQL + Kafka
  ### Inventory Service
-  * Tech Stack --> Spring Boot + MYSQL + Kafka
+  * Tech Stack --> Spring Boot + MYSQL + Kafka + Redis
  ### Notification Service
   * Tech Stack --> Spring Boot + MYSQL + Kafka
  ### Zipkin Setup
