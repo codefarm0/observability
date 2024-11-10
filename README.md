@@ -53,6 +53,7 @@
  * Final demo with all the pieces connected
  * Postman Collection for interaction with API
  * API and contracts Documentation for reference
+ * Chat GPT page - https://chatgpt.com/share/67308fa0-bef0-800e-b1d5-bc183d6c0001
  ### Next Steps
  * What next?
  
