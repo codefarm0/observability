@@ -35,6 +35,11 @@ bin\windows\kafka-topics.bat --create --topic payment-topic --bootstrap-server l
 bin\windows\kafka-topics.bat --create --topic inventory-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
 ```
 
+Command to list the kafka topics
+
+```
+bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+```
  ### MYSQL DB Setup
  * DB Setup
  * DB Creation
