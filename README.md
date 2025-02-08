@@ -25,6 +25,16 @@
    * inventory-topic
  * Monitoring
 
+Here are the CLI commands to create the Kafka topics on your local machine (Windows):  
+
+```sh
+bin\windows\kafka-topics.bat --create --topic order-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+
+bin\windows\kafka-topics.bat --create --topic payment-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+
+bin\windows\kafka-topics.bat --create --topic inventory-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+```
+
  ### MYSQL DB Setup
  * DB Setup
  * DB Creation
@@ -33,6 +43,62 @@
    * payment_info
    * inventory_info
    * notification_info
+ 
+ Here are the SQL commands to create tables for each service in MySQL, with fields tailored to the example scenario.
+ **1. Order Table**
+Stores details of each order in the **Order Service**.
+
+```sql
+CREATE TABLE orders (
+    order_id VARCHAR(50) PRIMARY KEY,
+    user_id VARCHAR(50) NOT NULL,
+    product_id VARCHAR(50) NOT NULL,
+    quantity INT NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL,
+    status VARCHAR(20) DEFAULT 'PENDING',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+ **2. Payment Table**
+Stores details of each payment in the **Payment Service**.
+
+```sql
+CREATE TABLE payments (
+    payment_id VARCHAR(50) PRIMARY KEY,
+    order_id VARCHAR(50) NOT NULL,
+    user_id VARCHAR(50) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    payment_method VARCHAR(20) NOT NULL,
+    status VARCHAR(20) DEFAULT 'PENDING',
+    processed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (order_id) REFERENCES orders(order_id)
+);
+```
+
+ **3. Inventory Table**
+Stores stock details of each product in the **Inventory Service**.
+
+```sql
+CREATE TABLE inventory (
+    product_id VARCHAR(50) PRIMARY KEY,
+    quantity INT NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+```
+
+ **4. Notification Table**
+Stores details of each notification sent in the **Notification Service**.
+
+```sql
+CREATE TABLE notifications (
+    notification_id VARCHAR(50) PRIMARY KEY,
+    user_id VARCHAR(50) NOT NULL,
+    message TEXT NOT NULL,
+    type VARCHAR(20) NOT NULL,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+```
 
 ### Redis Setup
 * Installation
