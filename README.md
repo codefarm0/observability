@@ -126,6 +126,8 @@ CREATE TABLE notifications (
 ### Redis Setup
 * Installation
 * Interacting with CLI
+
+  Detailed guide is here - [link](https://github.com/codefarm0/observability/blob/main/redis-installation.md)
   
  ### Order Microservice
  * Tech Stack --> Spring Boot + MYSQL + Kafka + Redis
