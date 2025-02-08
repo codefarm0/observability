@@ -25,7 +25,17 @@
    * inventory-topic
  * Monitoring
 
-Here are the CLI commands to create the Kafka topics on your local machine (Windows):  
+Command to start the zookeeper
+```
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+```
+
+Command to start the kafka
+```
+bin\windows\kafka-server-start.bat config\server.properties
+```
+
+Commands to create the Kafka topics on your local machine (Windows):  
 
 ```sh
 bin\windows\kafka-topics.bat --create --topic order-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
