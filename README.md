@@ -60,6 +60,14 @@ bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
    * notification_info
  
  Here are the SQL commands to create tables for each service in MySQL, with fields tailored to the example scenario.
+ 
+ **Create database and use that**
+ ```sh
+CREATE DATABASE IF NOT EXISTS observability;
+
+USE observability;
+```
+
  **1. Order Table**
 Stores details of each order in the **Order Service**.
 
